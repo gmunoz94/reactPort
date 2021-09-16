@@ -1,4 +1,5 @@
 import React from 'react';
+import { Card, Container } from 'react-bootstrap';
 
 const styles = {
     projCard: {
@@ -8,8 +9,8 @@ const styles = {
 
 function Portfolio() {
     return (
-        <div class="container">
-            <div class="card my-5 rounded-3 bg-lightG text-center">
+        <Container>
+            <Card class="my-5 rounded-3 bg-lightG text-center">
                 <h3 class="m-4">Past Work</h3>
                 <div class="card-body p-3">
                     <div id="Work">
@@ -49,8 +50,8 @@ function Portfolio() {
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>   
+            </Card>
+        </Container>   
     );
 }
 
