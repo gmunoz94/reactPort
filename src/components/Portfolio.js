@@ -1,55 +1,118 @@
 import React from 'react';
-import { Card, Container } from 'react-bootstrap';
+import { Card, Container, Row, Col } from 'react-bootstrap';
 
-const styles = {
+const styles = {    
+    lightG: {
+        backgroundColor: "#DEDBD2"
+    },
+    
+    pink: {
+        backgroundColor: "#EDAFB8"
+    },
+    
+    cham: {
+        backgroundColor: "#F7E1D7"
+    },
+    
+    green: {
+        backgroundColor: "#B0C4B1"
+    },
+    
+    deep: {
+        backgroundColor: "#4A5759"
+    },
+
     projCard: {
         width: '30%',
     },
+
+    contPad: {
+        paddingBottom: '81px'
+    }
 };
 
 function Portfolio() {
     return (
-        <Container>
-            <Card class="my-5 rounded-3 bg-lightG text-center">
-                <h3 class="m-4">Past Work</h3>
-                <div class="card-body p-3">
+        <Container style={styles.contPad}>
+            <Card style={styles.lightG} className="my-5 rounded-3 text-center">
+                <h3 className="m-4">Past Work</h3>
+                <Card.Body className="card-body p-3">
                     <div id="Work">
-                        <div class="row d-flex justify-content-evenly">
-                            <div class="card bg-cham p-2" style={styles.projCard}>
-                                <img src="/images/opticalPhoto.jpg" alt="Lenses in Production"/>
-                                <div class="card-body">
-                                    <h5>Optical Order Tracker</h5>
-                                    <p class="card-text">An order management system designed to track orders and notify patients of their order status. For use in an optical setting</p>
-                                </div>
-                                <div class="card-footer d-flex justify-content-evenly bg-lightG">
-                                    <a href="https://imagine-drive.herokuapp.com/" target="_blank" without rel="noreferrer" class="btn">Deployed Site</a>
-                                    <a href="https://github.com/gmunoz94/project2" target="_blank" without rel="noreferrer" class="btn">Github Repo</a>
-                                </div>
-                            </div>
-                            <div class="card p-2 bg-cham" style={styles.projCard}>
-                                <img src="/images/passGen.png" alt="Lenses in Production"/>
-                                <div class="card-body">
-                                    <h5>Password Generator</h5>
-                                    <p class="card-text">A random password generator that will take user input and output a password based on user defined properties.</p>
-                                </div>
-                                <div class="card-footer d-flex justify-content-evenly bg-lightG">
-                                    <a href="https://gmunoz94.github.io/passGenerator/" target="_blank" without rel="noreferrer" class="btn">Deployed Site</a>
-                                    <a href="https://github.com/gmunoz94/passGenerator" target="_blank" without rel="noreferrer" class="btn">Github Repo</a>                                    </div>
-                                </div>
-                            <div class="card p-2 bg-cham" style={styles.projCard}>
-                                <img src="/images/billsPC.png" alt="Lenses in Production"/>
-                                <div class="card-body">
-                                    <h5>Bill's PC</h5>
-                                    <p class="card-text">Rudimentary web application to build a custom Pokemon. Complete with "Nickname" and moveset.</p>
-                                </div>
-                                <div class="card-footer d-flex justify-content-evenly bg-lightG">
-                                    <a href="https://gmunoz94.github.io/pokeProj/" target="_blank" without rel="noreferrer" class="btn">Deployed Site</a>
-                                    <a href="https://github.com/gmunoz94/pokeProj" target="_blank" without rel="noreferrer" class="btn">Github Repo</a>
-                                </div>
-                            </div>
-                        </div>
+                        <Row className="d-flex justify-content-evenly flex-wrap">
+                            <Col sm={6} lg={4}>
+                                <Card style={styles.cham} className="p-2 my-1">
+                                    <Card.Img src="/images/opticalPhoto.jpg" alt="Lenses in Production"/>
+                                    <Card.Body>
+                                        <Card.Title>Optical Order Tracker</Card.Title>
+                                    </Card.Body>
+                                    <div style={styles.lightG} className="card-footer d-flex justify-content-evenly">
+                                        <a href="https://imagine-drive.herokuapp.com/" target="_blank" rel="noreferrer" className="btn">Deployed Site</a>
+                                        <a href="https://github.com/gmunoz94/project2" target="_blank" rel="noreferrer" className="btn">Github Repo</a>
+                                    </div>
+                                </Card>
+                            </Col>
+                            <Col sm={6} lg={4}>
+                                <Card style={styles.cham} className="p-2 my-1">
+                                    <Card.Img src="/images/passGen.png" alt="Lenses in Production"/>
+                                    <Card.Body>
+                                        <Card.Title>Password Generator</Card.Title>
+                                    </Card.Body>
+                                    <div style={styles.lightG} className="card-footer d-flex justify-content-evenly">
+                                        <a href="https://gmunoz94.github.io/passGenerator/" target="_blank" rel="noreferrer" className="btn">Deployed Site</a>
+                                        <a href="https://github.com/gmunoz94/passGenerator" target="_blank" rel="noreferrer" className="btn">Github Repo</a>                                    </div>
+                                </Card>
+                            </Col>
+                            <Col sm={6} lg={4}>
+                                <Card style={styles.cham} className="p-2 my-1">
+                                    <Card.Img src="/images/billsPC.png" alt="Lenses in Production"/>
+                                    <Card.Body>
+                                        <Card.Title>Bill's PC</Card.Title>
+                                    </Card.Body>
+                                    <div style={styles.lightG} className="card-footer d-flex justify-content-evenly">
+                                        <a href="https://gmunoz94.github.io/pokeProj/" target="_blank" rel="noreferrer" className="btn">Deployed Site</a>
+                                        <a href="https://github.com/gmunoz94/pokeProj" target="_blank" rel="noreferrer" className="btn">Github Repo</a>
+                                    </div>
+                                </Card>
+                            </Col>
+                            <Col sm={6} lg={4}>
+                                <Card style={styles.cham} className="p-2 my-1">
+                                    <Card.Img src="/images/billsPC.png" alt="Lenses in Production"/>
+                                    <Card.Body>
+                                        <Card.Title>Bill's PC</Card.Title>
+                                    </Card.Body>
+                                    <div style={styles.lightG} className="card-footer d-flex justify-content-evenly">
+                                        <a href="https://gmunoz94.github.io/pokeProj/" target="_blank" rel="noreferrer" className="btn">Deployed Site</a>
+                                        <a href="https://github.com/gmunoz94/pokeProj" target="_blank" rel="noreferrer" className="btn">Github Repo</a>
+                                    </div>
+                                </Card>
+                            </Col>
+                            <Col sm={6} lg={4}>
+                                <Card style={styles.cham} className="p-2 my-1">
+                                    <Card.Img src="/images/fittyTracker.png" alt="Lenses in Production"/>
+                                    <Card.Body>
+                                        <Card.Title>Fitness Tracker</Card.Title>
+                                    </Card.Body>
+                                    <div style={styles.lightG} className="card-footer d-flex justify-content-evenly">
+                                        <a href="https://fierce-eyrie-86934.herokuapp.com/" target="_blank" rel="noreferrer" className="btn">Deployed Site</a>
+                                        <a href="https://github.com/gmunoz94/fittyTracker" target="_blank" rel="noreferrer" className="btn">Github Repo</a>
+                                    </div>
+                                </Card>
+                            </Col>
+                            <Col sm={6} lg={4}>
+                                <Card style={styles.cham} className="p-2 my-1">
+                                    <Card.Img src="/images/bigBudget.png" alt="Lenses in Production"/>
+                                    <Card.Body>
+                                        <Card.Title>Online Budget</Card.Title>
+                                    </Card.Body>
+                                    <div style={styles.lightG} className="card-footer d-flex justify-content-evenly">
+                                        <a href="https://enigmatic-island-28277.herokuapp.com/" target="_blank" rel="noreferrer" className="btn">Deployed Site</a>
+                                        <a href="https://github.com/gmunoz94/budgetMaster" target="_blank" rel="noreferrer" className="btn">Github Repo</a>
+                                    </div>
+                                </Card>
+                            </Col>
+                        </Row>
                     </div>
-                </div>
+                </Card.Body>
             </Card>
         </Container>   
     );

@@ -17,43 +17,39 @@ const styles = {
   },
   noDec: {
     textDecoration: 'none'
-  }
+  },
+  deep: {
+    backgroundColor: "#4A5759"
+},
 };
 
 // In Navbar, we can assign a style from an object by using curly braces
 function Navbar() {
   return (
-    <div className="footer mt-auto p-3 d-flex border-top justify-content-evenly fixed-bottom">
+    <div style={styles.deep} className="mt-auto p-3 d-flex border-top justify-content-evenly fixed-bottom">
         <div className="col-md-4 d-flex align-items-center">
-        <a href="/" className="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-          <img src="/images/email.png" alt=""/>
-        </a>
-        <span className="text-muted">Gerardo Munoz 2021</span>
+        <span className="text-white">Gerardo Munoz 2021</span>
         </div>
     
         <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li className="ms-3 text-center">
-            <a className="text-muted" href="mailto:gmunoz9619@gmail.com">
+          <li className="ms-2 text-center">
+            <a className="text-muted" href="mailto:gmunoz9619@gmail.com" style={styles.noDec}>
               <img src="/images/email.png" alt=""/>
-              <p className="text-dark" style={styles.noDec}>Email</p>
             </a>
             </li>
-          <li className="ms-3 text-center">
-            <a className="text-muted" href="tel:5129861629">
+          <li className="ms-2 text-center">
+            <a className="text-muted" href="tel:5129861629" style={styles.noDec}>
               <img src="/images/phone.png" alt=""/>
-              <p className="text-dark" style={styles.noDec}>Phone</p>
             </a>
           </li>
-          <li className="ms-3 text-center">
-            <a className="text-muted" href="https://github.com/gmunoz94" target="_blank" rel="noreferrer">
+          <li className="ms-2 text-center">
+            <a className="text-muted" href="https://github.com/gmunoz94" target="_blank" rel="noreferrer" style={styles.noDec}>
               <img src="/images/github.png" alt=""/>
-              <p className="text-dark" style={styles.noDec}>Github</p>
             </a>
           </li>
-          <li className="ms-3 text-center">
-            <a className="text-muted" href="https://www.linkedin.com/in/gerardo-mu%C3%B1oz-7b114819b/" target="_blank" rel="noreferrer">
+          <li className="ms-2 text-center">
+            <a className="text-muted" href="https://www.linkedin.com/in/gerardo-mu%C3%B1oz-7b114819b/" target="_blank" rel="noreferrer" style={styles.noDec}>
               <img src="/images/linkedin.png" alt=""/>
-              <p className="text-dark" style={styles.noDec}>LinkedIn</p>
             </a>
           </li>
         </ul>
