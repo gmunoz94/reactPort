@@ -81,7 +81,7 @@ function Portfolio() {
                             </Col>
                             <Col sm={6} lg={4}>
                                 <Card style={styles.cham} className="p-2 my-1">
-                                    <Card.Img src="/images/billsPC.png" alt="Lenses in Production"/>
+                                    <Card.Img src={billsPC} alt="Lenses in Production"/>
                                     <Card.Body>
                                         <Card.Title>Bill's PC</Card.Title>
                                     </Card.Body>
