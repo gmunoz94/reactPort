@@ -1,5 +1,10 @@
 import React from 'react';
 import { Card, Container, Row, Col } from 'react-bootstrap';
+import opticalPhoto from "../images/opticalPhoto.jpg";
+import passGen from "../images/passGen.png";
+import billsPC from "../images/billsPC.png";
+import fittyTracker from "../images/fittyTracker.png";
+import bigBudget from "../images/bigBudget.png";
 
 const styles = {    
     lightG: {
@@ -41,7 +46,7 @@ function Portfolio() {
                         <Row className="d-flex justify-content-evenly flex-wrap">
                             <Col sm={6} lg={4}>
                                 <Card style={styles.cham} className="p-2 my-1">
-                                    <Card.Img src="/images/opticalPhoto.jpg" alt="Lenses in Production"/>
+                                    <Card.Img src={opticalPhoto} alt="Lenses in Production"/>
                                     <Card.Body>
                                         <Card.Title>Optical Order Tracker</Card.Title>
                                     </Card.Body>
@@ -53,7 +58,7 @@ function Portfolio() {
                             </Col>
                             <Col sm={6} lg={4}>
                                 <Card style={styles.cham} className="p-2 my-1">
-                                    <Card.Img src="/images/passGen.png" alt="Lenses in Production"/>
+                                    <Card.Img src={passGen} alt="Lenses in Production"/>
                                     <Card.Body>
                                         <Card.Title>Password Generator</Card.Title>
                                     </Card.Body>
@@ -64,7 +69,7 @@ function Portfolio() {
                             </Col>
                             <Col sm={6} lg={4}>
                                 <Card style={styles.cham} className="p-2 my-1">
-                                    <Card.Img src="/images/billsPC.png" alt="Lenses in Production"/>
+                                    <Card.Img src={billsPC} alt="Lenses in Production"/>
                                     <Card.Body>
                                         <Card.Title>Bill's PC</Card.Title>
                                     </Card.Body>
@@ -88,7 +93,7 @@ function Portfolio() {
                             </Col>
                             <Col sm={6} lg={4}>
                                 <Card style={styles.cham} className="p-2 my-1">
-                                    <Card.Img src="/images/fittyTracker.png" alt="Lenses in Production"/>
+                                    <Card.Img src={fittyTracker} alt="Lenses in Production"/>
                                     <Card.Body>
                                         <Card.Title>Fitness Tracker</Card.Title>
                                     </Card.Body>
@@ -100,7 +105,7 @@ function Portfolio() {
                             </Col>
                             <Col sm={6} lg={4}>
                                 <Card style={styles.cham} className="p-2 my-1">
-                                    <Card.Img src="/images/bigBudget.png" alt="Lenses in Production"/>
+                                    <Card.Img src={bigBudget} alt="Lenses in Production"/>
                                     <Card.Body>
                                         <Card.Title>Online Budget</Card.Title>
                                     </Card.Body>
