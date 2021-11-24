@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/reactPort/static/js/main.abfb67ee.chunk.js",
-    "main.js.map": "/reactPort/static/js/main.abfb67ee.chunk.js.map",
+    "main.js": "/reactPort/static/js/main.8f144293.chunk.js",
+    "main.js.map": "/reactPort/static/js/main.8f144293.chunk.js.map",
     "runtime-main.js": "/reactPort/static/js/runtime-main.78c7a305.js",
     "runtime-main.js.map": "/reactPort/static/js/runtime-main.78c7a305.js.map",
     "static/css/2.f2512455.chunk.css": "/reactPort/static/css/2.f2512455.chunk.css",
@@ -9,12 +9,13 @@
     "static/js/2.87cd7322.chunk.js.map": "/reactPort/static/js/2.87cd7322.chunk.js.map",
     "index.html": "/reactPort/index.html",
     "static/css/2.f2512455.chunk.css.map": "/reactPort/static/css/2.f2512455.chunk.css.map",
-    "static/js/2.87cd7322.chunk.js.LICENSE.txt": "/reactPort/static/js/2.87cd7322.chunk.js.LICENSE.txt"
+    "static/js/2.87cd7322.chunk.js.LICENSE.txt": "/reactPort/static/js/2.87cd7322.chunk.js.LICENSE.txt",
+    "static/media/gerardo.bddf8827.jpeg": "/reactPort/static/media/gerardo.bddf8827.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.78c7a305.js",
     "static/css/2.f2512455.chunk.css",
     "static/js/2.87cd7322.chunk.js",
-    "static/js/main.abfb67ee.chunk.js"
+    "static/js/main.8f144293.chunk.js"
   ]
 }
