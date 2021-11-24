@@ -1,4 +1,8 @@
 import React from 'react';
+import emailIcon from "../images/email.png";
+import phoneIcon from "../images/phone.png";
+import githubIcon from "../images/github.png";
+import linkedInIcon from "../images/linkedin.png";
 
 // We declare an object called styles that will contain a few objects for card and heading styles
 // Notice that each key lists CSS styles in camel case
@@ -34,22 +38,22 @@ function Navbar() {
         <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
           <li className="ms-2 text-center">
             <a className="text-muted" href="mailto:gmunoz9619@gmail.com" style={styles.noDec}>
-              <img src="/images/email.png" alt=""/>
+              <img src={emailIcon} alt=""/>
             </a>
             </li>
           <li className="ms-2 text-center">
             <a className="text-muted" href="tel:5129861629" style={styles.noDec}>
-              <img src="/images/phone.png" alt=""/>
+              <img src={phoneIcon} alt=""/>
             </a>
           </li>
           <li className="ms-2 text-center">
             <a className="text-muted" href="https://github.com/gmunoz94" target="_blank" rel="noreferrer" style={styles.noDec}>
-              <img src="/images/github.png" alt=""/>
+              <img src={githubIcon} alt=""/>
             </a>
           </li>
           <li className="ms-2 text-center">
             <a className="text-muted" href="https://www.linkedin.com/in/gerardo-mu%C3%B1oz-7b114819b/" target="_blank" rel="noreferrer" style={styles.noDec}>
-              <img src="/images/linkedin.png" alt=""/>
+              <img src={linkedInIcon} alt=""/>
             </a>
           </li>
         </ul>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import mePic from '../images/gerardo.jpeg';
 
 const styles = {
     gerardoImg: {
@@ -23,7 +24,7 @@ function AboutMe() {
                 </Row>
                 <Row className='my-3 justify-content-evenly'>
                     <Col md={12} lg={3} className="justify-content-center">
-                        <img src='/images/gerardo.jpeg' style={styles.gerardoImg} alt='headshot'></img>
+                        <img src={mePic} style={styles.gerardoImg} alt='headshot'></img>
                     </Col>
                     <Col md={12} lg={8}>
                         <h3 className="py-3">Gerardo</h3>
