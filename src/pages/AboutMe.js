@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import mePic from '../images/gerardo.jpeg';
+import mePic from '../images/gerardo.jpg';
 
 const styles = {
     gerardoImg: {
