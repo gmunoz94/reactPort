@@ -32,14 +32,14 @@ function App() {
           <Container>
             <Navbar.Brand>Gerardo Munoz</Navbar.Brand>
             <Nav className="me-auto">
-              <Nav.Link style={styles.secondaryLink } href='/aboutMe'>About Me</Nav.Link>
+              <Nav.Link style={styles.secondaryLink } href='/'>About Me</Nav.Link>
               <Nav.Link style={styles.secondaryLink } href='/Portfolio'>Portfolio</Nav.Link>
               <Nav.Link style={styles.secondaryLink } href='/Contact'>Contact Me</Nav.Link>
               <Nav.Link style={styles.secondaryLink} href="https://drive.google.com/file/d/1gVfAEE5JCb16DiJI_7jd4J5O4x0gtwqg/view?usp=sharing" target="_blank">Resume</Nav.Link>
             </Nav>
           </Container>
         </Navbar>
-        <Route exact path="/aboutMe">
+        <Route exact path="/">
           <AboutMe />
         </Route>
         <Route exact path="/Contact">
