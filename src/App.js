@@ -39,7 +39,7 @@ function App() {
             </Nav>
           </Container>
         </Navbar>
-        <Route exact path="/">
+        <Route exact path="*">
           <AboutMe />
         </Route>
         <Route exact path="/Contact">
